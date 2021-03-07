@@ -31,7 +31,6 @@ where de.emp_no IN
 	( 
 		Select emp_no
 		FROM dept_manager
-
 	);
 
 --List the department of each employee with the following information: employee number, last name, first name, and department name.
@@ -52,8 +51,15 @@ WHERE e.first_name = 'Hercules'
 AND e.last_name like 'B%'
 
 --List all employees in the Sales department, including their employee number, last name, first name, and department name.
-Select *
-From employee 
+Select de.emp_no,
+	e.last_name,
+	e.first_name,
+	d.dept_name
+From departments as d 
+INNER JOIN dept_emp as de ON d.dept_no = de.dept_no
+INNER JOIN employee as e ON de.emp_no = e.emp_no
+where d.dept_name = 'Sales'
+
 
 --List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 Select *
