@@ -1,12 +1,4 @@
 # SQL-Challenge
-In this assignment, I was able to design the tables needed to hold data imported from the supplied CSVs. Identifying the proper relationship between objects was the 'key' to querying the database. Once the proper schema was designedmade querying the database a breeze. 
+In this assignment, I was able to design the tables needed to hold data imported from the supplied CSVs. Identifying the proper relationship between objects was the 'key' to querying the database. Once the proper schema was designed, I was able to query the various tables and join tables when necessary. 
 
-
-Submission
-Create an image file of your ERD.
-
-Create a .sql file of your table schemata.
-
-Create a .sql file of your queries.
-
-Create and upload a repository with the above files to GitHub and post a link on BootCamp Spot.
+Using quickdatabasediagrams.com to create the ERD was fun. I started here after drawing out a rough draft. In the future, I will explore exporting the SQL then importing into PGAdmin. 
