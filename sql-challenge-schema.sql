@@ -38,10 +38,16 @@ CREATE TABLE salaries (
     salary money NOT NULL,
 	FOREIGN KEY (emp_no) REFERENCES employee(emp_no)
 );
--- Create a titles table
-CREATE TABLE titles (
-    title_id VARCHAR(10)  NOT NULL,
-    title varchar(255) NOT NULL
+-- Create a dept_manager table
+CREATE TABLE dept_manager (
+    dept_no VARCHAR(10)  NOT NULL,
+    emp_no int NOT NULL,
+	FOREIGN KEY (emp_no) REFERENCES employee(emp_no)
 );
 
+-- Create a titles table
+CREATE TABLE titles (
+    title_id VARCHAR(10) NOT NULL PRIMARY KEY,
+    title varchar(255) NOT NULL
+);
 
